@@ -13,30 +13,30 @@
 #logo {
   width: 256px;
   height: 79px;
-  margin: 10px 20px 0;
+  margin: 10px 0 0 2%;
 }
 
 #container {
   background-color: rgb(225, 225, 225);
   position: relative;
 }
-.navBar {
-  display: inline-flex;
-  width: 100%;
-  justify-content: space-around;
+.nav-bar {
+  display: flex;
+  width: 90%;
   list-style: none;
   padding-bottom: 20px;
   font-size: 20px;
-  position: relative;
+  justify-content: space-between;
 }
 
-.navLinks {
-  margin: 35px 0 25px;
+.nav-links {
+  margin-top: 35px;
   transition: 0.5s;
   color: black;
+  display: inline-block;
 }
 
-.navLinks:hover {
+.nav-links:hover {
   transition: 0.5s;
   font-size: 25px;
 }
@@ -63,6 +63,53 @@ h1 {
   display: inline-block;
   margin: 0 25px;
 }
-#pageContent {
+#page-content {
   display: flex;
+  padding: 20px;
+}
+
+.goal-text {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#goal1 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(225, 225, 225);
+  margin: 0 20px 0 0;
+}
+
+#goal2 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(225, 225, 225);
+  margin: 0 20px 0 0;
+}
+
+#goal3 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(225, 225, 225);\
+}
+
+.goal-heading {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.goal-button {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 105, 0);
+  border: solid lightgreen 2px;
+}
+
+.button-text {
+  color: white;
 }
