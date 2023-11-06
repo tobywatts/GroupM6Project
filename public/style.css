@@ -10,6 +10,10 @@
   color: black;
 }
 
+body {
+  background-color: rgb(48, 48, 48);
+}
+
 #logo {
   width: 256px;
   height: 79px;
@@ -44,7 +48,7 @@
 h1 {
   font-size: 50px;
   justify-content: center;
-  color: black;
+  color: rgb(230, 230, 230);
   padding: 50px;
   text-align: center;
   z-index: 0;
