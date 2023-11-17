@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <ul class="nav-bar">
+          <img src="images/unLogo.png" alt="United Nations Logo" id="logo" />
+          <li class="nav-links"><a href="index.html">Home</a></li>
+          <li class="nav-links">Goals</li>
+          <li class="nav-links"><a href="signup.html">Sign up</a></li>
+          <li class="nav-links"><a href="about.html">About</a></li>
+          <li class="nav-links"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDgSOJLe1dJ894AnHW3Rx__zU4I1dd8TK8",
+        authDomain: "groupm6project.firebaseapp.com",
+        projectId: "groupm6project",
+        storageBucket: "groupm6project.appspot.com",
+        messagingSenderId: "719662113902",
+        appId: "1:719662113902:web:658d466a7ed0a29635b27f",
+        measurementId: "G-JKL1LLXBV0",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>

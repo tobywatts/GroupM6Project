@@ -117,3 +117,22 @@ h1 {
 .button-text {
   color: white;
 }
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 20px;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar {
+    width: 100%;
+  }
+  #page-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
