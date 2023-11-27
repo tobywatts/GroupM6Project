@@ -10,14 +10,18 @@
   color: black;
 }
 
-body {
-  background-color: rgb(48, 48, 48);
+body,
+#home-page {
+  /* background-color: rgb(48, 48, 48); */
+  background-image: url(images/forest.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #logo {
   width: 256px;
-  height: 79px;
-  margin: 10px 0 0 2%;
+  height: 80px;
+  margin: 15px 0 0 20px;
 }
 
 #container {
@@ -28,39 +32,35 @@ body {
   display: flex;
   width: 90%;
   list-style: none;
-  padding-bottom: 20px;
   font-size: 20px;
+  padding: 0 0 20px 0;
   justify-content: space-between;
+  max-height: 110px;
 }
 
 .nav-links {
-  margin-top: 35px;
   transition: 0.5s;
   color: black;
-  display: inline-block;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  margin: 20px 0 0 0;
+  justify-content: space-between;
 }
 
 .nav-links:hover {
   transition: 0.5s;
   font-size: 25px;
+  background-color: rgb(200, 200, 200);
 }
 
 h1 {
   font-size: 50px;
-  justify-content: center;
-  color: rgb(230, 230, 230);
-  padding: 50px;
+  color: rgb(255, 255, 255);
+  padding: 35px 0 20px 0;
   text-align: center;
-  z-index: 0;
   position: relative;
-}
-
-#protest {
-  width: 800px;
-  height: 450px;
-  z-index: 1;
-  display: inline-block;
-  position: relative;
+  margin: 0 20px;
 }
 
 #homePageDesc {
@@ -77,27 +77,19 @@ h1 {
   font-size: 20px;
 }
 
-#goal1 {
+.goals {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
   background-color: rgb(225, 225, 225);
+}
+
+#goal1 {
   margin: 0 20px 0 0;
 }
 
 #goal2 {
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgb(225, 225, 225);
   margin: 0 20px 0 0;
-}
-
-#goal3 {
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgb(225, 225, 225);
 }
 
 .goal-heading {
@@ -118,21 +110,87 @@ h1 {
   color: white;
 }
 
-@media screen and (max-width: 1000px) {
-  body {
-    padding: 20px;
+@media screen and (min-width: 671px), (max-width: 1000px) {
+  h1 {
+    font-size: 24px;
   }
   #container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
   }
 
   #nav-bar {
-    width: 100%;
+    justify-content: space-between;
   }
+
+  .nav-links {
+    padding: 10px;
+    display: flex;
+  }
+
   #page-content {
     flex-direction: column;
     justify-content: center;
+    margin: 0 5%;
+  }
+
+  .goals {
+    width: 100%;
+    justify-content: space-around;
+  }
+  #goal1,
+  #goal2 {
+    margin: 0 0 20px 0;
+  }
+
+  .goal-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  h1 {
+    font-size: 0px;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  #logo {
+    width: 200px;
+    height: 60px;
+    float: left;
+  }
+
+  #nav-bar {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    font-size: 0px;
+  }
+
+  #page-content {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5%;
+  }
+
+  .goals {
+    width: 100%;
+    justify-content: space-around;
+  }
+  #goal1,
+  #goal2 {
+    margin: 0 0 20px 0;
+  }
+
+  .goal-text {
+    font-size: 14px;
   }
 }
