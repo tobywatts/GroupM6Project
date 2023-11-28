@@ -28,6 +28,13 @@ body,
   background-color: rgb(225, 225, 225);
   position: relative;
 }
+
+nav {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
 .nav-bar {
   display: flex;
   width: 90%;
@@ -36,6 +43,7 @@ body,
   padding: 0 0 20px 0;
   justify-content: space-between;
   max-height: 110px;
+  margin: 0 5%;
 }
 
 .nav-links {
@@ -46,11 +54,11 @@ body,
   align-items: center;
   margin: 20px 0 0 0;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .nav-links:hover {
   transition: 0.5s;
-  font-size: 25px;
   background-color: rgb(200, 200, 200);
 }
 
@@ -110,7 +118,7 @@ h1 {
   color: white;
 }
 
-@media screen and (min-width: 671px), (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   h1 {
     font-size: 24px;
   }
@@ -119,10 +127,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
-  }
-
-  #nav-bar {
-    justify-content: space-between;
   }
 
   .nav-links {
