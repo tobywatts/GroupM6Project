@@ -72,7 +72,7 @@ nav {
 h1 {
   font-size: 50px;
   color: rgb(0, 0, 0);
-  padding: 35px 0 20px 0;
+  padding: 20px 0 15px 0;
   text-align: center;
   position: relative;
   margin: 0 20px;
@@ -96,7 +96,7 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 20px;
+  padding: 0px 20px;
   border-radius: 10px;
   background-color: rgb(225, 225, 225);
   width: 33%;
@@ -121,7 +121,7 @@ h1 {
 }
 
 .goal-heading h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   padding-bottom: 10px;
 }
@@ -142,7 +142,7 @@ h1 {
 }
 
 footer {
-  background-color: #025602;
+  background-color: rgb(225, 225, 225);
   font-size: 0.7em;
   text-align: center;
   color: #fff9e8;
@@ -150,20 +150,23 @@ footer {
   margin-top: 32px;
 }
 
-footer a:link{
-  color: #fff9e8;
+#homepage-footer {
+  padding: 8px;
+}
+
+footer a:link {
+  color: blue;
 }
 
 footer a:hover {
   color: #4586ba;
 }
 
-
 /********** CSS FOR SIGNUP.HTML **********/
 
 /* Blurs the background */
 body.body-signup::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -177,8 +180,6 @@ body.body-signup::before {
 }
 
 .main-signup {
-  margin: 0;
-  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,31 +235,31 @@ body.body-signup::before {
   outline: none;
 }
 
-  .name-signup {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .name-signup input {
-    flex: 1; 
-    margin-right: 5px;
-  }
-  
-  .text-signup input[type="text"]:last-child {
-    width: 92.75%; 
-  }
+.name-signup {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .button-signup {
-    font-weight: 700;
-    font-size: 16px;
-    color: #fff9e8;
-    border: 2px;
-    border-style: solid;
-    background-color: #b8195a;
-    border-color: #b8195a;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 3px;
+.name-signup input {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.text-signup input[type="text"]:last-child {
+  width: 92.75%;
+}
+
+.button-signup {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff9e8;
+  border: 2px;
+  border-style: solid;
+  background-color: #b8195a;
+  border-color: #b8195a;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 3px;
 }
 
 .p-signup2 {
@@ -357,4 +358,3 @@ body.body-signup::before {
     font-size: 24px;
   }
 }
-
