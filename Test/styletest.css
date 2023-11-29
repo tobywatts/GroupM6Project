@@ -1,0 +1,61 @@
+.main-signup {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container-signup {
+  width: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.content-signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-signup {
+  height: 50%;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.image-signup img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-signup {
+  padding: 20px;
+}
+
+.text-signup input {
+  width: calc(100% - 40px);
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+  .name-signup {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name-signup input {
+    flex: 1; 
+    margin-right: 5px;
+  }
+  
+  .text-signup input[type="text"]:last-child {
+    width: 92.75%; 
+  }
