@@ -164,7 +164,7 @@ footer a:hover {
 /* Blurs the background */
 body.body-signup::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -174,6 +174,7 @@ body.body-signup::before {
   background-attachment: fixed;
   filter: blur(5px);
   z-index: -1;
+  pointer-events: none;
 }
 
 .main-signup {
@@ -183,13 +184,15 @@ body.body-signup::before {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .container-signup {
-  width: 400px;
+  width: 520px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
   background-color: #fff;
 }
 
@@ -220,45 +223,74 @@ body.body-signup::before {
   color: black;
   text-align: center;
 }
+.form-signup {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
 .text-signup {
-  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 .text-signup input {
   width: calc(100% - 40px);
   margin-bottom: 15px;
-  padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  padding: 12px 20px;
+  width: 240px; 
+  flex: 1;
   outline: none;
 }
 
-  .name-signup {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .name-signup input {
-    flex: 1; 
-    margin-right: 5px;
-  }
-  
-  .text-signup input[type="text"]:last-child {
-    width: 92.75%; 
-  }
+.name-signup {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .button-signup {
-    font-weight: 700;
-    font-size: 16px;
-    color: #fff9e8;
-    border: 2px;
-    border-style: solid;
-    background-color: #b8195a;
-    border-color: #b8195a;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 3px;
+.name-signup input {
+  flex: 1; 
+  margin-right: 5px;
+}
+
+.mail-signup input {
+  width: 98.5%; 
+}
+
+textarea {
+  display: block;
+  width: 98.5%;
+  padding: 10px;
+  margin-top: o;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #ccc; 
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.button-signup {
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff9e8;
+  border: 10px;
+  border-style: solid;
+  background-color: #b8195a;
+  border-color: #b8195a;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 3px;
+  margin-bottom: 15px;
+  width: 135px;
+  
 }
 
 .p-signup2 {
@@ -267,7 +299,9 @@ body.body-signup::before {
   font-style: italic;
   font-size: 13px;
   text-align: center;
+  padding-bottom: 16px;
 }
+/*********************/
 
 @media screen and (max-width: 1000px) {
   h1 {
@@ -355,6 +389,40 @@ body.body-signup::before {
 
   .goal-text {
     font-size: 24px;
+  }
+
+  /********** CSS FOR SIGNUP.HTML (smaller screen) **********/
+  .container-signup {
+    width: 85%;
+  }
+  
+  .name-signup {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .text-signup input {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    font-size: 16px;
+    padding: 18px 15px;
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 16px;
+    padding: 18px 15px;
+  }
+
+  .h1-signup {
+    font-size: 30px;
+  }
+  .p-signup {
+    font-size: 18px;
   }
 }
 
