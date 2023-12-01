@@ -49,7 +49,9 @@ function validateFields() {
         let confirmation = confirm("Thank you for subscribing. Click OK to go to the index page.");
         if (confirmation) {
             redirectToIndex();
+            return false;
         }
         return true;
     }
+    return false;
 }
