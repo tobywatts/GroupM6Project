@@ -297,6 +297,10 @@ textarea {
   text-align: center;
   padding-bottom: 16px;
 }
+
+#footer-signup {
+  margin-top: -45px;
+}
 /*********************/
 
 @media screen and (max-width: 1000px) {
