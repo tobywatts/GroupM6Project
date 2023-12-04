@@ -143,11 +143,22 @@ footer {
   text-align: center;
   color: #fff9e8;
   padding: 16px;
-  margin-top: 32px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-#homepage-footer {
+.not-signup-footer {
   padding: 8px;
+}
+
+#footer-signup {
+  background-color: rgb(225, 225, 225);
+  font-size: 0.7em;
+  text-align: center;
+  color: #fff9e8;
+  padding: 16px;
 }
 
 footer a:link {
@@ -298,9 +309,6 @@ textarea {
   padding-bottom: 16px;
 }
 
-#footer-signup {
-  margin-top: -45px;
-}
 /*********************/
 
 @media screen and (max-width: 1000px) {
@@ -345,6 +353,12 @@ textarea {
 
   .goal-heading {
     height: 60px;
+  }
+  footer,
+  #footer-signup {
+    height: 0;
+    font-size: 0;
+    background-color: transparent;
   }
 }
 
