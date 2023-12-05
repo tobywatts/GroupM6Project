@@ -10,6 +10,13 @@
   color: black;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -67,6 +74,10 @@ nav {
 .nav-links:hover {
   transition: 0.5s;
   background-color: rgb(200, 200, 200);
+}
+
+#hamburger {
+  display: none;
 }
 
 h1 {
@@ -137,28 +148,20 @@ h1 {
   float: inline-end;
 }
 
+.show-nav {
+  background-color: black;
+}
+
 footer {
   background-color: rgb(225, 225, 225);
   font-size: 0.7em;
   text-align: center;
   color: #fff9e8;
-  padding: 16px;
+  padding: 8px;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.not-signup-footer {
-  padding: 8px;
-}
-
-#footer-signup {
-  background-color: rgb(225, 225, 225);
-  font-size: 0.7em;
-  text-align: center;
-  color: #fff9e8;
-  padding: 16px;
 }
 
 footer a:link {
@@ -366,6 +369,17 @@ textarea {
   h1 {
     font-size: 0px;
   }
+
+  #hamburger {
+    display: block;
+    float: right;
+    padding: 6px 8px;
+    border-radius: 10px;
+    margin-top: 16.5px;
+    background-color: #d6d3d1;
+    border: solid rgb(190, 190, 190) 2px;
+  }
+
   #container {
     display: flex;
     flex-direction: column;
@@ -376,10 +390,6 @@ textarea {
   #logo {
     float: left;
     height: max-content;
-  }
-
-  #nav-bar {
-    justify-content: space-between;
   }
 
   .nav-links {
@@ -403,6 +413,10 @@ textarea {
 
   .goal-text {
     font-size: 24px;
+  }
+
+  .goal-heading {
+    margin-top: 20px;
   }
 
   /********** CSS FOR SIGNUP.HTML (smaller screen) **********/
