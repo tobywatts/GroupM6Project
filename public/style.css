@@ -45,13 +45,13 @@ body,
 nav {
   display: flex;
   align-items: center;
-  gap: 50px;
+  /* gap: 50px; */
   width: 100%;
 }
 
 .nav-bar {
   display: flex;
-  width: 90%;
+  width: 100%;
   list-style: none;
   font-size: 20px;
   padding: 0 0 20px 0;
@@ -78,6 +78,7 @@ nav {
 
 #hamburger {
   display: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -146,10 +147,6 @@ h1 {
   background-color: #d6d3d1;
   border: solid rgb(190, 190, 190) 2px;
   float: inline-end;
-}
-
-.show-nav {
-  background-color: black;
 }
 
 footer {
@@ -276,10 +273,7 @@ textarea {
   display: block;
   width: 98.5%;
   padding: 10px;
-  margin-top: o;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 5px;
+  margin: 0 5 0 0; /* top right bottom left */
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
@@ -365,19 +359,29 @@ textarea {
   }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 577px) {
   h1 {
-    font-size: 0px;
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    float: right;
   }
 
   #hamburger {
     display: block;
-    float: right;
     padding: 6px 8px;
     border-radius: 10px;
-    margin-top: 16.5px;
+    margin: 16.5px 10px;
     background-color: #d6d3d1;
     border: solid rgb(190, 190, 190) 2px;
+    z-index: 1;
+  }
+
+  #main-nav {
+    z-index: 0;
+    top: 20px;
   }
 
   #container {
@@ -393,7 +397,16 @@ textarea {
   }
 
   .nav-links {
-    font-size: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-nav {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
   }
 
   #page-content {
