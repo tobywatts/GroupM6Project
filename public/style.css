@@ -381,7 +381,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 577px) {
+@media screen and (max-width: 720px) {
   h1 {
     display: none;
   }
@@ -398,12 +398,13 @@ textarea {
     margin: 16.5px 10px;
     background-color: #d6d3d1;
     border: solid rgb(190, 190, 190) 2px;
-    z-index: 1;
+    right: 0;
+    /* z-index: 1; */
   }
 
   #main-nav {
     z-index: 0;
-    top: 20px;
+    margin: 0;
   }
 
   #container {
@@ -429,6 +430,8 @@ textarea {
     display: flex;
     flex-direction: column;
     background-color: black;
+    float: right;
+    right: 0;
   }
 
   #page-content {
