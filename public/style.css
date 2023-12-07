@@ -35,6 +35,7 @@ body,
   width: 256px;
   height: 80px;
   margin: 10px;
+  padding: 10px;
 }
 
 #container {
@@ -455,12 +456,16 @@ textarea {
     border: solid rgb(190, 190, 190) 2px;
   }
 
-  #goals-nav-bar {
+  #goals-button {
     display: none;
   }
 
+  #dropdown-links {
+    display: block;
+  }
+
   #dropdown-content {
-    display: flex;
+    display: none;
   }
 
   /* #dropdown-content {

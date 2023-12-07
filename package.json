@@ -2,9 +2,9 @@
   "name": "groupm6project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "dev": "nodemon index.js -e html,js,css"
+    "dev": "nodemon app.js -e html,js,css"
   },
   "author": "Toby Watts",
   "license": "ISC",
