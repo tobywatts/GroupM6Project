@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goal 2 test</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/711801da20.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="hamburger.js" defer></script>
   </head>
   <body>
     <div id="container">
@@ -12,10 +17,24 @@
         <img src="images/unLogo.png" alt="United Nations Logo" id="logo" />
         <ul class="nav-bar">
           <li class="nav-links"><a href="index.html">Home</a></li>
-          <li class="nav-links">Goals</li>
+          <li class="nav-links" id="goals-nav-bar">
+            Goals&nbsp;<i class="fa-solid fa-angle-down"></i>
+            <ul id="dropdown-content">
+              <li class="dropdown-links">
+                <a href="goal1.html">Affordable and Clean Energy</a>
+              </li>
+              <li class="dropdown-links">
+                <a href="goal2.html">Responsible Consumption and Production</a>
+              </li>
+              <li class="dropdown-links">
+                <a href="goal3.html">Climate Action</a>
+              </li>
+            </ul>
+          </li>
           <li class="nav-links"><a href="signup.html">Sign&nbsp;up</a></li>
           <li class="nav-links"><a href="about.html">About</a></li>
         </ul>
+        <a id="hamburger"> <i class="fa-solid fa-bars"></i> </a>
       </nav>
     </div>
 

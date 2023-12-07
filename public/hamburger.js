@@ -1,7 +1,8 @@
+const navBar = document.querySelector(".nav-bar");
+const hamburger = document.getElementById("hamburger");
+
 function toggleEvent() {
-  let links = document.querySelector(".nav-bar");
-  links.classList.toggle("show-nav");
+  navBar.classList.toggle("show-nav");
 }
 
-let hamburger = document.querySelector("#hamburger");
 hamburger.addEventListener("click", toggleEvent);
