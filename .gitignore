@@ -68,3 +68,8 @@ node_modules/
 .DS_Store
 
 .vscode
+
+# firebase gone in github
+.firebaserc
+firebase.json
+.firebase
