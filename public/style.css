@@ -190,6 +190,14 @@ h1 {
   float: inline-end;
 }
 
+#hamburger-buttons {
+  display: none;
+}
+
+#goal-button-hamburger {
+  display: none;
+}
+
 footer {
   background-color: rgb(225, 225, 225);
   font-size: 0.7em;
@@ -466,6 +474,10 @@ textarea {
 
   #dropdown-content {
     display: none;
+  }
+
+  .hamburger-buttons {
+    display: block;
   }
 
   /* #dropdown-content {
