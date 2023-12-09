@@ -75,6 +75,7 @@ nav {
   border-radius: 10px;
   position: relative;
   font-size: 18px;
+  text-align: center;
 }
 
 .nav-links:hover {
