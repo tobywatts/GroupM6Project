@@ -1,0 +1,111 @@
+{
+  "body": {
+    "container": {
+      "nav": {
+        "id": "main-nav",
+        "logo": {
+          "src": "images/unLogo.png",
+          "alt": "United Nations Logo",
+          "id": "logo"
+        },
+        "ul": {
+          "class": "nav-bar",
+          "li": [
+            {
+              "class": "nav-links",
+              "a": { "href": "index.html", "text": "Home" }
+            },
+            {
+              "class": "nav-links",
+              "a": { "href": "goal1.html", "text": "Clean Energy" }
+            },
+            {
+              "class": "nav-links",
+              "a": {
+                "href": "goal2.html",
+                "text": "Consumption and Production"
+              }
+            },
+            {
+              "class": "nav-links",
+              "a": { "href": "goal3.html", "text": "Climate Action" }
+            },
+            {
+              "class": "nav-links",
+              "a": { "href": "signup.html", "text": "Sign up" }
+            },
+            {
+              "class": "nav-links",
+              "a": { "href": "about.html", "text": "About" }
+            }
+          ],
+          "a": {
+            "id": "hamburger",
+            "i": { "class": "fa-solid fa-bars" }
+          }
+        }
+      }
+    },
+    "main": {
+      "id": "team-main",
+      "h1": { "id": "team-title", "text": "Meet Group M6!" },
+      "div": {
+        "id": "team-text",
+        "section": [
+          {
+            "class": "person",
+            "img": {
+              "src": "images/profile-picture.png",
+              "alt": "Profile Picture",
+              "class": "profile-picture"
+            },
+            "h3": { "class": "team-member-name", "text": "Toby Watts" },
+            "p": {
+              "class": "team-bio",
+              "text": "Hi, I'm Toby. I have coded all of the home page and the about page."
+            }
+          },
+          {
+            "class": "person",
+            "img": {
+              "src": "images/profile-picture.png",
+              "alt": "Profile Picture",
+              "class": "profile-picture"
+            },
+            "h3": { "class": "team-member-name", "text": "Jules Tournier" },
+            "p": {
+              "class": "team-bio",
+              "text": "Hi, I'm Jules. I have coded all of the Signup form."
+            }
+          },
+          {
+            "class": "person",
+            "img": {
+              "src": "images/profile-picture.png",
+              "alt": "Profile Picture",
+              "class": "profile-picture"
+            },
+            "h3": { "class": "team-member-name", "text": "Tom Walker" },
+            "p": {
+              "class": "team-bio",
+              "text": "Hi, I'm Tom. I have coded all of the goals pages."
+            }
+          }
+        ]
+      }
+    },
+    "footer": {
+      "small": [
+        { "i": { "text": "Copyright © 2023 United Nations" } },
+        {
+          "i": {
+            "a": {
+              "href": "mailto: J.Tournier@uea.ac.uk,Tom.Walker@uea.ac.uk,Toby.Watts@uea.ac.uk",
+              "text": " Group M6"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
