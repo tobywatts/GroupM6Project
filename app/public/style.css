@@ -359,6 +359,7 @@ textarea {
   width: 30%;
   border-radius: 10px;
   border: solid black 2px;
+  min-width: 50%;
 }
 
 .team-bio {
@@ -410,15 +411,8 @@ textarea {
   .goal-heading {
     height: 60px;
   }
-  footer,
-  #footer-signup {
-    height: 0;
-    font-size: 0;
-    background-color: transparent;
-  }
 }
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 850px) {
   h1 {
     display: none;
   }
@@ -501,6 +495,13 @@ textarea {
     margin-top: 20px;
   }
 
+  footer,
+  #footer-signup {
+    height: 0;
+    font-size: 0;
+    background-color: transparent;
+  }
+
   /********** CSS FOR SIGNUP.HTML (smaller screen) **********/
   .container-signup {
     width: 85%;
@@ -533,5 +534,32 @@ textarea {
   }
   .p-signup {
     font-size: 18px;
+  }
+
+  #team-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #team-title {
+    font-size: 24px;
+    display: inline-block;
+  }
+
+  .person {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #team-text {
+    flex-direction: column;
+    width: 100%;
+  }
+  .profile-picture {
+    min-width: 10%;
+    width: 30%;
   }
 }
