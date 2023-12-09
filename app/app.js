@@ -1,20 +1,9 @@
-<<<<<<< HEAD
 const express = require("express");
 const nodeMailer = require("nodemailer");
-=======
-const express = require('express')
-const nodeMailer = require('nodemailer');
-const fs = require('fs').promises
->>>>>>> 58cf36c12f73c71a677c2a24026d9da6afd1372d
+const fs = require("fs").promises;
 
 const app = express();
 const port = 3000;
-
-<<<<<<< HEAD
-const html = `
-    <h1> Hello World </h1>
-    <p> I am testing NodeMailer! </p>
-`;
 
 async function sendEmail() {
   const transporter = nodeMailer.createTransport({
@@ -27,54 +16,33 @@ async function sendEmail() {
     },
   });
 
-  const info = await transporter.sendMail({
-    from: "Jules Test <dun23rcu.test@outlook.com>",
-    to: "waterylemon420@gmail.com",
-    subject: "Test 123 Testing",
-    html: html,
-  });
+  try {
+    // Read the email from the JSON file
+    const fNameData = await fs.readFile("formData.json", "utf8");
+    const { first } = JSON.parse(fNameData);
+    const lNameData = await fs.readFile("formData.json", "utf8");
+    const { last } = JSON.parse(lNameData);
+    const emailData = await fs.readFile("formData.json", "utf8");
+    const { email } = JSON.parse(emailData);
+    const msgData = await fs.readFile("formData.json", "utf8");
+    const { message } = JSON.parse(msgData);
 
-  console.log("Message sent: " + info.messageId);
-=======
-async function sendEmail () {
-    const transporter = nodeMailer.createTransport({
-        host: 'smtp-mail.outlook.com',
-        port: 587,
-        secure:  false,
-        auth: {
-            user: 'dun23rcu.test@outlook.com',
-            pass: '23TestUEA'
-        }
-    });
-
-    try {
-        // Read the email from the JSON file
-        const fNameData = await fs.readFile('formData.json', 'utf8');
-        const { first } = JSON.parse(fNameData);
-        const lNameData = await fs.readFile('formData.json', 'utf8');
-        const { last } = JSON.parse(lNameData);
-        const emailData = await fs.readFile('formData.json', 'utf8');
-        const { email } = JSON.parse(emailData);
-        const msgData = await fs.readFile('formData.json', 'utf8');
-        const { message } = JSON.parse(msgData);
-
-        const html = `
+    const html = `
             <h1> Hello ${first} ${last} </h1>
             <p> your message was: ${message} </p>
         `;
 
-        const info = await transporter.sendMail({
-            from: 'Jules Test <dun23rcu.test@outlook.com>',
-            to: email, // Use the email read from the JSON file
-            subject: 'Test 123 Testing',
-            html: html
-        });
+    const info = await transporter.sendMail({
+      from: "Jules Test <dun23rcu.test@outlook.com>",
+      to: email, // Use the email read from the JSON file
+      subject: "Test 123 Testing",
+      html: html,
+    });
 
-        console.log("Message sent: " + info.messageId);
-    } catch (err) {
-        console.error(err);
-    }
->>>>>>> 58cf36c12f73c71a677c2a24026d9da6afd1372d
+    console.log("Message sent: " + info.messageId);
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 app.use(express.static(__dirname));
