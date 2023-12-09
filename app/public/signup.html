@@ -9,9 +9,10 @@
       src="https://kit.fontawesome.com/bbd0e05cb1.js"
       crossorigin="anonymous"
     ></script>
-    <script src="formvalidation.js"></script>
+    <script src="signup.js"></script>
     <script src="app.js"></script>
     <script src="hamburger.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
 
   <body class="body-signup">
@@ -19,30 +20,23 @@
       <nav id="main-nav">
         <img src="images/unLogo.png" alt="United Nations Logo" id="logo" />
         <ul class="nav-bar">
-
-          <li class="nav-links">
-            <a href="index.html">Home</a>
+          <li class="nav-links"><a href="index.html">Home</a></li>
+          <li class="nav-links" id="goals-nav-bar">
+            Goals&nbsp;<i class="fa-solid fa-angle-down"></i>
+            <ul id="dropdown-content">
+              <li class="dropdown-links">
+                <a href="goal1.html">Affordable and Clean Energy</a>
+              </li>
+              <li class="dropdown-links">
+                <a href="goal2.html">Responsible Consumption and Production</a>
+              </li>
+              <li class="dropdown-links">
+                <a href="goal3.html">Climate Action</a>
+              </li>
+            </ul>
           </li>
-
-          <li class="nav-links"> 
-            <a href="goal1.html">Clean Energy</a>
-          </li>
-
-          <li class="nav-links">
-            <a href="goal2.html">Consumption and Production</a>
-          </li>
-
-          <li class="nav-links">
-            <a href="goal3.html">Climate Action</a>
-          </li>
-        
-          </li>
-          <li class="nav-links">
-            <a href="signup.html">Sign&nbsp;up</a>
-          </li>
-          <li class="nav-links">
-            <a href="about.html">About</a>
-          </li>
+          <li class="nav-links"><a href="signup.html">Sign&nbsp;up</a></li>
+          <li class="nav-links"><a href="about.html">About</a></li>
         </ul>
         <a id="hamburger"> <i class="fa-solid fa-bars"></i> </a>
       </nav>
@@ -56,37 +50,30 @@
           </div>
           <h1 class="h1-signup">Subscribe Now</h1>
           <p class="p-signup">Never miss an update</p>
-          <form
-            name="signupForm"
-            class="form-signup"
-            ,
-            onsubmit="return validateFields()"
-            ,
-            method="post"
-          >
+          <form name = "signupForm" class = "form-signup" onsubmit="return validateFields()" method="post">
             <div class="text-signup">
+              
               <div class="name-signup">
                 <input
                   type="text"
                   id="fname"
                   name="Fname"
-                  placeholder="First Name"
-                />
+                  placeholder="First Name"/>
                 <input
                   type="text"
                   id="lname"
                   name="Lname"
-                  placeholder="Last Name"
-                />
+                  placeholder="Last Name"/>
               </div>
+              
               <div class="mail-signup">
                 <input
                   type="email"
                   id="email"
                   name="Email"
-                  placeholder="E-mail"
-                />
+                  placeholder="E-mail"/>
               </div>
+              
               <div class="comment-signup">
                 <textarea
                   id="message"
