@@ -1,9 +1,39 @@
 const express = require("express");
 const nodeMailer = require("nodemailer");
 const fs = require("fs").promises;
+const bodyParser = require("body-parser");
 
 const app = express();
 const port = 3000;
+
+
+app.use(express.static(__dirname));
+app.use(express.static("public"));
+app.use(bodyParser.json());
+
+app.post("/add-data", async (req, res) => {
+  try {
+      const formData = req.body;
+
+      // Read existing data from formData.json
+      const jsonData = await fs.readFile("formData.json", "utf8");
+      const existingData = JSON.parse(jsonData);
+
+      // Update the existing JSON data with new form data
+      for (let key in formData) {
+          if (key in existingData) {
+              existingData[key].push(formData[key]);
+          }
+      }
+
+      // Write updated data back to formData.json
+      await fs.writeFile("formData.json", JSON.stringify(existingData, null, 2));
+
+      console.log("data saved " + info.messageId);
+  } catch (err) {
+      console.error(err);
+  }
+});
 
 async function sendEmail() {
   const transporter = nodeMailer.createTransport({
@@ -44,9 +74,6 @@ async function sendEmail() {
     console.error(err);
   }
 }
-
-app.use(express.static(__dirname));
-app.use(express.static("public"));
 
 app.post("/send-email", (req, res) => {
   // Trigger the email sending logic when a POST request is made to '/send-email'
