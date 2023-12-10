@@ -105,12 +105,6 @@ async function sendEmail() {
   }
 }
 
-// app.post("/send-email", (req, res) => {
-//   // Trigger the email sending logic when a POST request is made to '/send-email'
-//   sendEmail().catch((err) => console.error(err));
-//   res.sendStatus(200); // Respond with a success status to the client
-// });
-
 app.get("/", (req, res) => {
   res.render("about");
   res.sendFile("index.html", { root: __dirname }, (err) => {
