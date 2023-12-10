@@ -6,28 +6,27 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 3000;
 
-
 app.use(express.static(__dirname));
 app.use(express.static("public"));
 app.use(bodyParser.json());
 
 app.post("/add-data", async (req, res) => {
   try {
-      const formData = req.body;
+    const formData = req.body;
 
-      // Read existing data from formData.json
-      const jsonData = await fs.readFile("formData.json", "utf8");
-      const existingData = JSON.parse(jsonData);
+    // Read existing data from formData.json
+    const jsonData = await fs.readFile("formData.json", "utf8");
+    const existingData = JSON.parse(jsonData);
 
-      // Update the existing JSON data with new form data
-      for (let key in formData) {
-          if (key in existingData) {
-              existingData[key].push(formData[key]);
-          }
+    // Update the existing JSON data with new form data
+    for (let key in formData) {
+      if (key in existingData) {
+        existingData[key].push(formData[key]);
       }
+    }
 
-      // Write updated data back to formData.json
-      await fs.writeFile("formData.json", JSON.stringify(existingData, null, 2));
+    // Write updated data back to formData.json
+    await fs.writeFile("formData.json", JSON.stringify(existingData, null, 2));
 
       sendEmail(formData, () => {
         console.log("Email sent after data saved");
@@ -59,7 +58,6 @@ async function sendEmail() {
     const last = formData.last[formData.last.length - 1];
     const email = formData.email[formData.email.length - 1];
     const message = formData.message[formData.message.length - 1];
-
 
     const html = `
       <head>
@@ -114,6 +112,7 @@ app.post("/send-email", (req, res) => {
 });
 
 app.get("/", (req, res) => {
+  res.render("about");
   res.sendFile("index.html", { root: __dirname }, (err) => {
     if (err) {
       console.log(err);
