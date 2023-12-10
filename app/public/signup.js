@@ -29,28 +29,12 @@ function addDataToJSON() {
     });
 }
 
+
 // ================= When form is submitted, return to index.html =================
 function redirectToIndex() {
   window.location.href = 'index.html';
 }
 
-// ================= Sends a request to activate the send email function in app.s =================
-function sendEmailToServer() {
-  fetch('/send-email', {
-      method: 'POST'
-  })
-  .then(response => {
-      if (response.ok) {
-          console.log('Email sent!');
-          // Redirect to index.html or perform other actions upon successful email sending
-      } else {
-          console.error('Error sending email');
-      }
-  })
-  .catch(error => {
-      console.error('Error:', error);
-  });
-}
 
 // ================= Form validation =================
 function validateFields() {
@@ -101,7 +85,6 @@ function validateFields() {
       console.log(e);
       console.log(m);
 
-      sendEmailToServer();
       addDataToJSON();
 
       Swal.fire({

@@ -29,15 +29,15 @@ app.post("/add-data", async (req, res) => {
     await fs.writeFile("formData.json", JSON.stringify(existingData, null, 2));
 
       sendEmail(formData, () => {
-        console.log("Email sent after data saved");
-        res.sendStatus(200); // Respond with a success status to the client after the email is sent
-      });
+          console.log("Email sent after data saved");
+          res.sendStatus(200); // Respond with a success status to the client after the email is sent
+        });
 
-      console.log("Data saved");
-    } catch (err) {
-      console.error(err);
-      res.status(500).send("Internal Server Error"); // Handle errors appropriately
-    }
+        console.log("Data saved");
+      } catch (err) {
+        console.error(err);
+        res.status(500).send("Internal Server Error"); // Handle errors appropriately
+      }
 });
 
 async function sendEmail() {
@@ -58,6 +58,8 @@ async function sendEmail() {
     const last = formData.last[formData.last.length - 1];
     const email = formData.email[formData.email.length - 1];
     const message = formData.message[formData.message.length - 1];
+
+    console.log(`Data retrived: ${first}, ${last}, ${email}, ${message}`);
 
     const html = `
       <head>
@@ -97,19 +99,17 @@ async function sendEmail() {
     });
 
     console.log("Message sent: " + info.messageId);
-    if (callback) {
-      callback()
-    }
+
   } catch (err) {
     console.error(err);
   }
 }
 
-app.post("/send-email", (req, res) => {
-  // Trigger the email sending logic when a POST request is made to '/send-email'
-  sendEmail().catch((err) => console.error(err));
-  res.sendStatus(200); // Respond with a success status to the client
-});
+// app.post("/send-email", (req, res) => {
+//   // Trigger the email sending logic when a POST request is made to '/send-email'
+//   sendEmail().catch((err) => console.error(err));
+//   res.sendStatus(200); // Respond with a success status to the client
+// });
 
 app.get("/", (req, res) => {
   res.render("about");
