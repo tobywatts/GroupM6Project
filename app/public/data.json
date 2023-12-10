@@ -1,4 +1,36 @@
 {
+  "homePage": {
+    "Main": {
+      "header": "United Nations Sustainable Development Goals",
+      "pageContent": {
+        "goal1": {
+          "goal1Heading": "Affordable and Clean Energy",
+          "goal1Text": "Energy is central to nearly every major challenge and opportunity the world faces today. Be it for jobs, security, climate change, food production or increasing incomes, access to energy for all is essential. Working towards this goal is especially important as is interlinks with other Sustainable Development Goals.",
+          "goal1Button": {
+            "href": "goal1.html",
+            "text": "Read More"
+          }
+        },
+        "goal2": {
+          "goal2Heading": "Responsible Consumption and Production",
+          "goal2Text": "Sustainable consumption and production is about promoting resource and energy efficiency, sustainable infrastructure, and providing access to basic services, green and decent jobs and a better quality of life for all. Its implementation helps to achieve overall development plans, reduce future economic, environmental and social costs, strengthen economic competitiveness and reduce poverty.",
+          "goal2Button": {
+            "href": "goal2.html",
+            "text": "Read More"
+          }
+        },
+        "goal3": {
+          "goal3Heading": "Climate Action",
+          "goal3Text": "Sustainable consumption and production is about promoting resource and energy efficiency, sustainable infrastructure, and providing access to basic services, green and decent jobs and a better quality of life for all. Its implementation helps to achieve overall development plans, reduce future economic, environmental and social costs, strengthen economic competitiveness and reduce poverty.",
+          "goal3Button": {
+            "href": "goal3.html",
+            "text": "Read More"
+          }
+        }
+      }
+    }
+  },
+
   "aboutPage": {
     "Main": {
       "header": "Meet Group M6!",
@@ -10,7 +42,7 @@
             "class": "profile-picture"
           },
           "name": "Toby Watts",
-          "bio": "Hi, I'm Toby. I am a first year computer science student at the University of East Anglia. My contributions to the website include the home page and the about page."
+          "bio": "Hi, I'm Toby. I am a first year computer science student at the University of East Anglia. My contributions to the website include the home page, the about page and the hamburger menu."
         },
         "person2": {
           "img": {

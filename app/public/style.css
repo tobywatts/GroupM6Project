@@ -136,13 +136,12 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100px;
-  margin-bottom: 10px;
 }
 
 .goal-heading h3 {
   font-size: 24px;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .goal-button {
@@ -349,6 +348,7 @@ textarea {
   font-size: 24px;
   font-weight: bold;
   padding: 10px 0;
+  text-align: center;
 }
 
 .profile-picture {
@@ -366,7 +366,7 @@ textarea {
 
 /*********************/
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1130px) {
   h1 {
     font-size: 24px;
   }
@@ -403,13 +403,14 @@ textarea {
 
   .goal-text {
     font-size: 18px;
+    margin-top: 10px;
   }
 
   .goal-heading {
     height: 60px;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 785px) {
   h1 {
     display: none;
   }
@@ -485,7 +486,8 @@ textarea {
   }
 
   .goal-text {
-    font-size: 24px;
+    font-size: 16px;
+    padding: 10px;
   }
 
   .goal-heading {
@@ -558,5 +560,14 @@ textarea {
   .profile-picture {
     min-width: 10%;
     width: 30%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .goal-heading {
+    font-size: 16px;
+  }
+  .goal-text {
+    font-size: 14px;
   }
 }
