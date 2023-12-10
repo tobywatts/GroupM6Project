@@ -1,22 +1,14 @@
 {
   "first": [
-    "Jules",
-    "Ben",
-    "Tim"
+    "Jules"
   ],
   "last": [
-    "Tournier",
-    "Bill",
-    "Tam"
+    "Tournier"
   ],
   "email": [
-    "abc@123.com",
-    "ben@bill.com",
-    "tim@tam.co.uk"
+    "jules@tournier.us"
   ],
   "message": [
-    "Test",
-    "Test 1",
-    "Test 2"
+    "Final Test?"
   ]
 }
