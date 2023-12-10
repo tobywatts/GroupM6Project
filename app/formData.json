@@ -1,6 +1,14 @@
 {
-    "first": "Jules",
-    "last": "Tournier",
-    "email": "jules@tournier.us",
-    "message": "Test"
+  "first": [
+    "Jules"
+  ],
+  "last": [
+    "Tournier"
+  ],
+  "email": [
+    "jules@tournier.us"
+  ],
+  "message": [
+    "Final Test?"
+  ]
 }

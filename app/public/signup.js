@@ -1,9 +1,40 @@
-// Form Verification
 
+// ================= Store form data in formData.json
+function addDataToJSON() {
+    let formData = {
+        first: document.getElementById("fname").value,
+        last: document.getElementById("lname").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
+
+    console.log(formData);
+
+    fetch('/add-data', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log('Form data added to JSON!');
+        } else {
+            console.error('Error adding form data to JSON');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+// ================= When form is submitted, return to index.html =================
 function redirectToIndex() {
   window.location.href = 'index.html';
 }
 
+// ================= Sends a request to activate the send email function in app.s =================
 function sendEmailToServer() {
   fetch('/send-email', {
       method: 'POST'
@@ -21,6 +52,7 @@ function sendEmailToServer() {
   });
 }
 
+// ================= Form validation =================
 function validateFields() {
   let f = document.forms["signupForm"]["Fname"].value;
   let l = document.forms["signupForm"]["Lname"].value;
@@ -70,6 +102,7 @@ function validateFields() {
       console.log(m);
 
       sendEmailToServer();
+      addDataToJSON();
 
       Swal.fire({
           title: "Thank you for subscribing",
