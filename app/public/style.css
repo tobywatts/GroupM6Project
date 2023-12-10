@@ -161,7 +161,7 @@ h1 {
   z-index: 1;
 }
 
-.goal-image {
+/* .goal-image {
   width: calc(100% + 40px);
   height: 85px;
   position: relative;
@@ -173,16 +173,16 @@ h1 {
 }
 
 #goal1 .goal-image {
-  bottom: -137px;
+  bottom: -37.5%;
 }
 
 #goal2 .goal-image {
-  bottom: -77px;
+  bottom: -27%;
 }
 
 #goal3 .goal-image {
-  bottom: -77px;
-}
+  bottom: -18%;
+} */
 
 #hamburger-buttons {
   display: none;

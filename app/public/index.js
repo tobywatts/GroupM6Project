@@ -31,11 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
       button1Link.textContent =
         data.homePage.Main.pageContent.goal1.goal1Button.text;
 
-      const goal1Image = document.createElement("img");
-      goal1Image.className = "goal-image";
-      goal1Image.src = data.homePage.Main.pageContent.goal1.goal1Image.src;
-      goal1Image.alt = data.homePage.Main.pageContent.goal1.goal1Image.alt;
-
       const goal2 = document.createElement("section");
       goal2.id = "goal2";
       goal2.className = "goals";
@@ -58,11 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
       button2Link.href = data.homePage.Main.pageContent.goal2.goal2Button.href;
       button2Link.textContent =
         data.homePage.Main.pageContent.goal2.goal2Button.text;
-
-      const goal2Image = document.createElement("img");
-      goal2Image.className = "goal-image";
-      goal2Image.src = data.homePage.Main.pageContent.goal2.goal2Image.src;
-      goal2Image.alt = data.homePage.Main.pageContent.goal2.goal2Image.alt;
 
       const goal3 = document.createElement("section");
       goal3.id = "goal3";
@@ -87,11 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
       button3Link.textContent =
         data.homePage.Main.pageContent.goal3.goal3Button.text;
 
-      const goal3Image = document.createElement("img");
-      goal3Image.className = "goal-image";
-      goal3Image.src = data.homePage.Main.pageContent.goal3.goal3Image.src;
-      goal3Image.alt = data.homePage.Main.pageContent.goal3.goal3Image.alt;
-
       goal1HeadingDiv.appendChild(goal1Heading);
       goal2HeadingDiv.appendChild(goal2Heading);
       goal3HeadingDiv.appendChild(goal3Heading);
@@ -99,17 +84,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const goal1div = document.createElement("div");
       goal1div.appendChild(goal1HeadingDiv);
       goal1div.appendChild(goal1Text);
-      goal1div.appendChild(goal1Image);
 
       const goal2div = document.createElement("div");
       goal2div.appendChild(goal2HeadingDiv);
       goal2div.appendChild(goal2Text);
-      goal2div.appendChild(goal2Image);
 
       const goal3div = document.createElement("div");
       goal3div.appendChild(goal3HeadingDiv);
       goal3div.appendChild(goal3Text);
-      goal3div.appendChild(goal3Image);
 
       goal1.appendChild(goal1div);
       goal2.appendChild(goal2div);
