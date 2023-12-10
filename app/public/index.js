@@ -63,11 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const goal3Heading = document.createElement("h3");
       goal3Heading.textContent =
-        data.homePage.Main.pageContent.goal2.goal2Heading;
+        data.homePage.Main.pageContent.goal3.goal3Heading;
 
       const goal3Text = document.createElement("p");
       goal3Text.className = "goal-text";
-      goal3Text.textContent = data.homePage.Main.pageContent.goal2.goal2Text;
+      goal3Text.textContent = data.homePage.Main.pageContent.goal3.goal3Text;
 
       const goal3Button = document.createElement("button");
       goal3Button.className = "goal-button";
@@ -107,8 +107,8 @@ document.addEventListener("DOMContentLoaded", function () {
       goal3.appendChild(goal3Button);
 
       document.body.appendChild(pageContent);
-      document.getElementById("page-content").appendChild(goal1);
       document.getElementById("home-page").appendChild(title);
+      document.getElementById("page-content").appendChild(goal1);
       document.getElementById("page-content").appendChild(goal2);
       document.getElementById("page-content").appendChild(goal3);
       document.getElementById("home-page").appendChild(pageContent);
