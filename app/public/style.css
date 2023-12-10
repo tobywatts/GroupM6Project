@@ -158,7 +158,6 @@ h1 {
   background-color: #d6d3d1;
   border: solid rgb(190, 190, 190) 2px;
   float: inline-end;
-  z-index: 1;
 }
 
 /* .goal-image {
@@ -456,7 +455,7 @@ textarea {
     width: 225px;
     text-align: center;
     position: absolute;
-    right: 0px;
+    right: 35px;
     top: 80px;
     margin-right: 10px;
   }
@@ -468,9 +467,11 @@ textarea {
     background-color: rgb(225, 225, 225);
     margin: 0;
     padding: 5px;
-    width: inherit;
+    /* width: inherit; */
+    width: 300px;
+    font-size: 28px;
     justify-content: center;
-    border: solid rgb(190, 190, 190) 2px;
+    border: solid rgb(170, 170, 170) 2px;
   }
 
   #main-nav {
@@ -609,5 +610,11 @@ textarea {
   }
   .goal-text {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1921) {
+  .goal-text {
+    font-size: 24px;
   }
 }
