@@ -131,6 +131,12 @@ h1 {
   margin: 0 20px 0 0;
 }
 
+#goal1,
+#goal2,
+#goal3 {
+  border: solid rgb(190, 190, 190) 2px;
+}
+
 .goal-heading {
   display: flex;
   justify-content: center;
@@ -152,6 +158,30 @@ h1 {
   background-color: #d6d3d1;
   border: solid rgb(190, 190, 190) 2px;
   float: inline-end;
+  z-index: 1;
+}
+
+.goal-image {
+  width: calc(100% + 40px);
+  height: 85px;
+  position: relative;
+  left: -20px;
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  border-top: solid rgb(190, 190, 190) 2px;
+  border-bottom: solid rgb(190, 190, 190) 2px;
+}
+
+#goal1 .goal-image {
+  bottom: -137px;
+}
+
+#goal2 .goal-image {
+  bottom: -77px;
+}
+
+#goal3 .goal-image {
+  bottom: -77px;
 }
 
 #hamburger-buttons {
@@ -401,6 +431,10 @@ textarea {
     margin: 0 0 20px 0;
   }
 
+  .goal-image {
+    display: none;
+  }
+
   .goal-text {
     font-size: 18px;
     margin-top: 10px;
@@ -436,7 +470,7 @@ textarea {
     padding: 5px;
     width: inherit;
     justify-content: center;
-    border: solid black 2px;
+    border: solid rgb(190, 190, 190) 2px;
   }
 
   #main-nav {

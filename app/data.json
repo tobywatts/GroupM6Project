@@ -9,6 +9,10 @@
           "goal1Button": {
             "href": "goal1.html",
             "text": "Read More"
+          },
+          "goal1Image": {
+            "src": "images/wind-turbines.png",
+            "alt": "Wind Turbines"
           }
         },
         "goal2": {
@@ -17,6 +21,10 @@
           "goal2Button": {
             "href": "goal2.html",
             "text": "Read More"
+          },
+          "goal2Image": {
+            "src": "images/recycling.png",
+            "alt": "Bottles being recycled"
           }
         },
         "goal3": {
@@ -25,6 +33,10 @@
           "goal3Button": {
             "href": "goal3.html",
             "text": "Read More"
+          },
+          "goal3Image": {
+            "src": "images/climate-change.png",
+            "alt": "Wind Turbines"
           }
         }
       }
