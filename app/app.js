@@ -5,6 +5,8 @@ const fs = require("fs").promises;
 const app = express();
 const port = 3000;
 
+// app.set("view engine", "ejs");
+
 async function sendEmail() {
   const transporter = nodeMailer.createTransport({
     host: "smtp-mail.outlook.com",
@@ -55,6 +57,7 @@ app.post("/send-email", (req, res) => {
 });
 
 app.get("/", (req, res) => {
+  res.render("about");
   res.sendFile("index.html", { root: __dirname }, (err) => {
     if (err) {
       console.log(err);

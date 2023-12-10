@@ -1,0 +1,36 @@
+{
+  "aboutPage": {
+    "Main": {
+      "header": "Meet Group M6!",
+      "teamText": {
+        "person1": {
+          "img": {
+            "src": "images/profile-picture.png",
+            "alt": "Profile Picture",
+            "class": "profile-picture"
+          },
+          "name": "Toby Watts",
+          "bio": "Hi, I'm Toby. I have coded all of the home page and the about page."
+        },
+        "person2": {
+          "img": {
+            "src": "images/profile-picture.png",
+            "alt": "Profile Picture",
+            "class": "profile-picture"
+          },
+          "name": "Jules Tournier",
+          "bio": "Hi, I'm Jules. I have coded all of the Signup form."
+        },
+        "person3": {
+          "img": {
+            "src": "images/profile-picture.png",
+            "alt": "Profile Picture",
+            "class": "profile-picture"
+          },
+          "name": "Tom Walker",
+          "bio": "Hi, I'm Tom. I have coded all of the goals pages."
+        }
+      }
+    }
+  }
+}

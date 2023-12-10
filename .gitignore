@@ -73,3 +73,9 @@ node_modules/
 .firebaserc
 firebase.json
 .firebase
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
