@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         goaltext.className = data.goal3.Main.goal3text.class;
       }
 
-      document
+      var src = document.getElementById("info");
+      src.appendChild();
     });
 });
