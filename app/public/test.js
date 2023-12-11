@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name = page.split(".")[0];
       if(name = "goal1"){
         const title = document.createElement("h2");
-        title.textContent = data.homePage.Main.header;
+        title.textContent = data.goal1.Main.header;
       }
     });
 });
