@@ -43,47 +43,49 @@
     }
   },
 
-  "goal1": {
+   "goal1": {
     "Main": {
       "header": "Affordable and Clean Energy",
-      "goal1-image": {
-        "src": "images/goal1.png",
+      "goal1Image": {
+        "src": "images/sun-windturbine.jpg",
         "alt": "Goal 1 Image",
         "class": "goal-image"
       },
-      "goal1-text": {
-        "text": "Lack of access to energy supplies and transformation systems is a constraint to human and economic development. The environment provides a series of renewable and non-renewable energy sources i.e. solar, wind, hydropower, geothermal, biofuels, natural gas, coal, petroleum, uranium. Increased use of fossil fuels without actions to mitigate greenhouse gases will have global climate change implications. Energy efficiency and increase use of renewables contribute to climate change mitigation and disaster risk reduction. Maintaining and protecting ecosystems allow using and further developing hydropower sources of electricity and bioenergy.",
-        "class": "goal1-text"
+      "goal1text": {
+        "text":"Lack of access to energy supplies and transformation systems is a constraint to human and economic development. The environment provides a series of renewable and non-renewable energy sources i.e. solar, wind, hydropower, geothermal, biofuels, natural gas, coal, petroleum, uranium. Increased use of fossil fuels without actions to mitigate greenhouse gases will have global climate change implications. Energy efficiency and increase use of renewables contribute to climate change mitigation and disaster risk reduction. Maintaining and protecting ecosystems allow using and further developing hydropower sources of electricity and bioenergy.",
+        "class": "goal-text"
       }
+
+      
     }
   },
 
   "goal2": {
     "Main": {
-      "header": "Affordable and Clean Energy",
-      "goal1-image": {
-        "src": "images/goal2.png",
+      "header": "Responsible Consumption and Production",
+      "goal2Image": {
+        "src": "images/sdg-12-responsible-consumption-and-production-share.jpg",
         "alt": "Goal 2 Image",
         "class": "goal-image"
       },
-      "goal2-text": {
+      "goal2text": {
         "text": "One of the greatest global challenges is to integrate environmental sustainability with economic growth and welfare by decoupling environmental degradation from economic growth and doing more with less. Resource decoupling and impact decoupling are needed to promote sustainable consumption and production patterns and to make the transition towards a greener and more socially inclusive global economy. To ensure sustainable consumption and production practices necessarily entails to respect the biophysical boundaries of the planet and to reduce current global consumption rates in order to fit with the biophysical capacity to produce",
-        "class": "goal-image"
+        "class": "goal-text"
       }
     }
   },
 
   "goal3": {
     "Main": {
-      "header": "Affordable and Clean Energy",
-      "goal1-image": {
-        "src": "images/goal3.png",
+      "header": "Climate Action",
+      "goal3Image": {
+        "src": "images/climate-change-1603470824021.jpg",
         "alt": "Goal 3 Image",
         "class": "goal-image"
       },
-      "goal3-text": {
+      "goal3text": {
         "text": "Climate change is increasing the frequency and intensity of extreme weather events such as heat waves, droughts, floods and tropical cyclones, aggravating water management problems, reducing agricultural production and food security, increasing health risks, damaging critical infrastructure and interrupting the provision of basic services such water and sanitation, education, energy and transport. From 1880 to 2012, average global temperature increased by 0.85°C, Oceans have warmed, the amounts of snow and ice have diminished and sea level has risen. From 1901 to 2010, the global average sea level rose by 19 cm as oceans expanded. The Arctic’s sea ice extent has shrunk in every successive decade since 1979, Global emissions of carbon dioxide (CO2) have increased by almost 50 per cent since 1990, Emissions grew more quickly between 2000 and 2010 than in each of the three previous decades",
-        "class": "goal-image"
+        "class": "goal-text"
       }
     }
   },
