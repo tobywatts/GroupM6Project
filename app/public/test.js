@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const goalimage = document.createElement("img");
         goalimage.src = data.goal1.Main.goal1Image.src;
         goalimage.className = data.goal1.Main.goal1Image.class;
+
+        const goaltext = document.createElement("p");
+        goaltext.textContent = data.goal1.Main.
       }
 
       if(name = "goal2"){
