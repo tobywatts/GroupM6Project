@@ -79,46 +79,7 @@
       "goal3-text": "Climate change is increasing the frequency and intensity of extreme weather events such as heat waves, droughts, floods and tropical cyclones, aggravating water management problems, reducing agricultural production and food security, increasing health risks, damaging critical infrastructure and interrupting the provision of basic services such water and sanitation, education, energy and transport. From 1880 to 2012, average global temperature increased by 0.85°C, Oceans have warmed, the amounts of snow and ice have diminished and sea level has risen. From 1901 to 2010, the global average sea level rose by 19 cm as oceans expanded. The Arctic’s sea ice extent has shrunk in every successive decade since 1979, Global emissions of carbon dioxide (CO2) have increased by almost 50 per cent since 1990, Emissions grew more quickly between 2000 and 2010 than in each of the three previous decades"
     }
   },
-
-  "signupPage": {
-    "main": {
-        "image": {
-            "src": "images/Children-planting-trees-1.jpeg",
-            "alt": "Your Image" },
-        "header": "Subscribe Now",
-        "text1": "Never miss an update",
-        "text2": "We won't send you any spam, you can unsubscribe at any time"
-    },
-
-    "form": {
-        "name": "signupForm",
-        "onsubmit": "return validateFields()",
-
-        "inputs": {
-            "fname": {
-                "name": "Fname",
-                "placeholder": "First Name"
-            },
-            "lname": {
-                "name": "Lname",
-                "placeholder": "Last Name"
-            },
-            "email": {
-                "name": "Email",
-                "placeholder": "Email"
-            },
-            "message": {
-                "name": "message",
-                "rows": "4",
-                "collumns": "50",
-                "placeholder": "Type your message here"
-            }
-        },
-        "button": {
-            "value": "Subscribe"
-        }
-      }
-    },
+  
 
   "signupPage": {
     "main": {
