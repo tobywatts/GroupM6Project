@@ -120,6 +120,46 @@
       }
     },
 
+  "signupPage": {
+    "main": {
+        "image": {
+            "src": "images/Children-planting-trees-1.jpeg",
+            "alt": "Your Image" },
+        "header": "Subscribe Now",
+        "text1": "Never miss an update",
+        "text2": "We won't send you any spam, you can unsubscribe at any time"
+    },
+
+    "form": {
+        "name": "signupForm",
+        "onsubmit": "return validateFields()",
+
+        "inputs": {
+            "fname": {
+                "name": "Fname",
+                "placeholder": "First Name"
+            },
+            "lname": {
+                "name": "Lname",
+                "placeholder": "Last Name"
+            },
+            "email": {
+                "name": "Email",
+                "placeholder": "Email"
+            },
+            "message": {
+                "name": "message",
+                "rows": "4",
+                "collumns": "50",
+                "placeholder": "Type your message here"
+            }
+        },
+        "button": {
+            "value": "Subscribe"
+        }
+      }
+    },
+
 
 
   "aboutPage": {
