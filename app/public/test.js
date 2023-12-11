@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
       var page = path.split("/").pop();
       var name = page.split(".");
       name = page.split(".")[0];
-      if(name =
-      const title = document.createElement("h2");
-      title.textContent = data.homePage.Main.header;
-
-      
+      if(name = "goal1"){
+        const title = document.createElement("h2");
+        title.textContent = data.homePage.Main.header;
+      }
     });
 });
