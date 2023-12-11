@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const goalimage = document.createElement("img");
         goalimage.src = data.goal1.Main.goal1Image.src;
+        goalimage.className = data.goal1.Main.goal1Image.
       }
     });
 });
