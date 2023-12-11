@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const form = document.createElement("form");
         form.name = data.signupPage.form.name;
         form.className = "form-signup";
-        form.onsubmit = data.signupPage.form.onsubmit;
+        form.onsubmit = validateFields;
+        form.method = "post";
 
         const text = document.createElement("div");
         text.className = "text-signup";
