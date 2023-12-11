@@ -10,6 +10,45 @@
   color: black;
 }
 
+#info{ 
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left:auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 20px;
+  border-radius: 10px;
+  background-color: rgb(225, 225, 225);
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#info > .goal-text{
+  margin: 5%;
+}
+
+#info > h2{
+  margin: 2%;
+  text-decoration-line: underline
+}
+
+
+
+#info > img{
+  object-fit: cover;
+  margin: 2%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  max-width: 100%;
+  height: auto;
+  width: auto\9
+}
+
+
 html,
 body {
   width: 100%;
