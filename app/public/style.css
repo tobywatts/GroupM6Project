@@ -212,7 +212,7 @@ footer a:hover {
 /********** CSS FOR SIGNUP.HTML **********/
 
 /* Blurs the background */
-body.body-signup::before {
+#blur ::before {
   content: "";
   position: fixed;
   top: 0;

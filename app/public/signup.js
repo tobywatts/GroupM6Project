@@ -1,5 +1,100 @@
+// ================= Dynamically load signup page =================
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("data.json")
+      .then((response) => response.json())
+      .then((data) => {
 
-// ================= Store form data in formData.json
+        const container = document.createElement("div");
+        container.className = "container-signup";
+        
+        const content = document.createElement("div");
+        content.className = "content-signup";
+
+        const image = document.createElement("img");
+        image.className = "image-signup";
+        image.src = data.signupPage.main.image.src;
+        image.alt = data.signupPage.main.image.href;
+
+        const signup = document.createElement("h1");
+        signup.className = "h1-signup";
+        signup.textContent = data.signupPage.main.header;
+
+        const text1 = document.createElement("p");
+        text1.className = "p-signup";
+        text1.textContent = data.signupPage.main.text1;
+
+        const form = document.createElement("form");
+        form.name = data.signupPage.form.name;
+        form.className = "form-signup";
+        form.onsubmit = data.signupPage.form.onsubmit;
+
+        const text = document.createElement("div");
+        text.className = "text-signup";
+        
+        const names = document.createElement("div");
+        names.className = "name-signup";
+        
+        const firstName = document.createElement("input");
+        firstName.type = "text";
+        firstName.id = "fname";
+        firstName.name = data.signupPage.form.inputs.fname.name;
+        firstName.placeholder = data.signupPage.form.inputs.fname.placeholder;
+
+
+        const lastName = document.createElement("input");
+        lastName.type = "text";
+        lastName.id = "lname";
+        lastName.name = data.signupPage.form.inputs.lname.name;
+        lastName.placeholder = data.signupPage.form.inputs.fname.placeholder;
+
+        const mail = document.createElement("div");
+        mail.className = "mail-signup";
+
+        const email = document.createElement("input");
+        lastName.type = "email";
+        lastName.id = "email";
+        lastName.name = data.signupPage.form.inputs.email.name;
+        lastName.placeholder = data.signupPage.form.inputs.email.placeholder;
+
+        const message = document.createElement("input");
+        message.className = "comment-signup"
+        lastName.id = "email";
+        lastName.name = data.signupPage.form.inputs.email.name;
+        lastName.row = data.signupPage.form.inputs.message.row;
+        lastName.collumns = data.signupPage.form.inputs.collumns;
+        lastName.placeholder = data.signupPage.form.inputs.email.placeholder;
+
+        const button = document.createElement("input");
+        message.className = "button-signup"
+        lastName.type = "submit";
+        lastName.value = data.signupPage.form.button.value;
+
+        const text2 = document.createElement("p");
+        text2.className = "p-signup";
+        text2.textContent = data.signupPage.main.text2;  
+        
+        container.appendChild(content);
+        content.appendChild(image);
+        content.appendChild(signup);
+        content.appendChild(text1);
+        content.appendChild(form);
+        form.appendChild(text);
+        text.appendChild(names)
+        names.appendChild(firstName);
+        names.appendChild(lastName);
+        text.appendChild(mail);
+        text.appendChild(message);
+        form.appendChild(button);
+        form.appendChild(text2);
+;
+        document.body.appendChild(container);
+        document.getElementById("main-signup").appendChild(container);
+        
+    });
+});
+    
+
+// ================= Store form data in formData.json =================
 function addDataToJSON() {
     let formData = {
         first: document.getElementById("fname").value,
@@ -102,5 +197,3 @@ function validateFields() {
   }
   return false;
 }
-
-
