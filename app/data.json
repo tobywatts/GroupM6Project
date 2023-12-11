@@ -46,7 +46,7 @@
   "goal1":{
     "Main":{
       "header": "Affordable and Clean Energy",
-      "goal1-image"{
+      "goal1-image" : {
         "src": "images/goal1.png",
         "alt": "Goal 1 Image",
         "class" : "goal-image"
@@ -58,7 +58,7 @@
   "goal2":{
     "Main":{
       "header": "Affordable and Clean Energy",
-      "goal1-image"{
+      "goal1-image" : {
         "src": "images/goal2.png",
         "alt": "Goal 2 Image",
         "class" : "goal-image"
@@ -71,7 +71,7 @@
   "goal3":{
     "Main":{
       "header": "Affordable and Clean Energy",
-      "goal1-image"{
+      "goal1-image" : {
         "src": "images/goal3.png",
         "alt": "Goal 3 Image",
         "class" : "goal-image"
