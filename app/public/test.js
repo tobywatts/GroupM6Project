@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const goalimage = document.createElement("img");
         goalimage.src = data.goal2.Main.goal2Image.src;
         goalimage.className = data.goal2.Main.goal2Image.class;
+
+        const goaltext = document.createElement("p");
+        goaltext.textContent = data.goal1.Main.goal1text.text;
+        goaltext.className = data.goal1.Main.goal1text.class;
       }
 
       if(name = "goal3"){
@@ -38,6 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const goalimage = document.createElement("img");
         goalimage.src = data.goal3.Main.goal3Image.src;
         goalimage.className = data.goal3.Main.goal3Image.class;
+
+        const goaltext = document.createElement("p");
+        goaltext.textContent = data.goal1.Main.goal1text.text;
+        goaltext.className = data.goal1.Main.goal1text.class;
       }
     });
 });
