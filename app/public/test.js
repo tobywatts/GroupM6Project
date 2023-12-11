@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
         goalimage.className = data.goal2.Main.goal2Image.class;
 
         const goaltext = document.createElement("p");
-        goaltext.textContent = data.goal1.Main.goal1text.text;
-        goaltext.className = data.goal1.Main.goal1text.class;
+        goaltext.textContent = data.goal2.Main.goal2text.text;
+        goaltext.className = data.goal2.Main.goal2text.class;
       }
 
       if(name = "goal3"){
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         goalimage.className = data.goal3.Main.goal3Image.class;
 
         const goaltext = document.createElement("p");
-        goaltext.textContent = data.goal1.Main.goal1text.text;
-        goaltext.className = data.goal1.Main.goal1text.class;
+        goaltext.textContent = data.goal3.Main.goal3text.text;
+        goaltext.className = data.goal3.Main.goal3text.class;
       }
     });
 });
