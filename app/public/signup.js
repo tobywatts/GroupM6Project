@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.appendChild(text2);
 ;
         document.body.appendChild(container);
-        document.getElementById("main-signup").appendChild(container);
+        document.getElementsByClassName("main-signup").appendChild(container);
         
     });
 });
