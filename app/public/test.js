@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       var src = document.getElementById("info");
-      src.appendChild();
+      src.appendChild(title);
+      src.appendChild(goalimage);
+      src.appendChild(goaltext);
     });
 });
