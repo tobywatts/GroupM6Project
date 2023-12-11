@@ -149,7 +149,7 @@
             "class": "profile-picture"
           },
           "name": "Jules Tournier",
-          "bio": "Hi, I'm Jules. I have coded all of the Signup form, I also made it so that the user will receive a confirmation email once they have signed up to the newsletter using packages like nodemailer."
+          "bio": "Hi, I'm Jules, I'm the coordinater and I have coded the signup page (including “signup.html”, “signup,css”, “signup.js”, “formData.json”) and the “app.js”"
         },
         "person3": {
           "img": {
