@@ -47,5 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         goaltext.textContent = data.goal3.Main.goal3text.text;
         goaltext.className = data.goal3.Main.goal3text.class;
       }
+
+      document
     });
 });
