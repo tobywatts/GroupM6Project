@@ -45,29 +45,33 @@ document.addEventListener("DOMContentLoaded", function () {
         lastName.type = "text";
         lastName.id = "lname";
         lastName.name = data.signupPage.form.inputs.lname.name;
-        lastName.placeholder = data.signupPage.form.inputs.fname.placeholder;
+        lastName.placeholder = data.signupPage.form.inputs.lname.placeholder;
 
         const mail = document.createElement("div");
         mail.className = "mail-signup";
 
         const email = document.createElement("input");
-        lastName.type = "email";
-        lastName.id = "email";
-        lastName.name = data.signupPage.form.inputs.email.name;
-        lastName.placeholder = data.signupPage.form.inputs.email.placeholder;
+        email.type = "email";
+        email.id = "email";
+        email.name = data.signupPage.form.inputs.email.name;
+        email.placeholder = data.signupPage.form.inputs.email.placeholder;
+        email.autocomplete = "on";
 
-        const message = document.createElement("input");
+        const msg = document.createElement("div");
+        msg.className = "message-signup";
+
+        const message = document.createElement("textarea");
         message.className = "comment-signup"
-        lastName.id = "email";
-        lastName.name = data.signupPage.form.inputs.email.name;
-        lastName.row = data.signupPage.form.inputs.message.row;
-        lastName.collumns = data.signupPage.form.inputs.collumns;
-        lastName.placeholder = data.signupPage.form.inputs.email.placeholder;
+        message.id = "message";
+        message.name = data.signupPage.form.inputs.message.name;
+        message.rows = data.signupPage.form.inputs.message.rows;
+        message.cols = data.signupPage.form.inputs.message.collumns;
+        message.placeholder = data.signupPage.form.inputs.message.placeholder;
 
         const button = document.createElement("input");
-        message.className = "button-signup"
-        lastName.type = "submit";
-        lastName.value = data.signupPage.form.button.value;
+        button.className = "button-signup"
+        button.type = "submit";
+        button.value = data.signupPage.form.button.value;
 
         const text2 = document.createElement("p");
         text2.className = "p-signup";
@@ -83,13 +87,15 @@ document.addEventListener("DOMContentLoaded", function () {
         names.appendChild(firstName);
         names.appendChild(lastName);
         text.appendChild(mail);
-        text.appendChild(message);
+        mail.appendChild(email);
+        text.appendChild(msg);
+        msg.appendChild(message);
         form.appendChild(button);
         form.appendChild(text2);
-;
-        document.body.appendChild(container);
-        document.getElementsByClassName("main-signup").appendChild(container);
-        
+;       
+        document.body.appendChild(container)
+        let main = document.querySelector(".main-signup");
+        main.appendChild(container);        
     });
 });
     
