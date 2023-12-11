@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const goaltext = document.createElement("p");
         goaltext.textContent = data.goal1.Main.goal1text;
-        goaltext.className = 
+        goaltext.className = data.goal1.Main.goal1text.class;
       }
 
       if(name = "goal2"){
