@@ -20,30 +20,19 @@
       <nav id="main-nav">
         <img src="images/unLogo.png" alt="United Nations Logo" id="logo" />
         <ul class="nav-bar">
+          <a href="index.html"><li class="nav-links">Home</li></a>
 
-          <li class="nav-links">
-            <a href="index.html">Home</a>
-          </li>
+          <a href="goal1.html"><li class="nav-links">Clean Energy</li></a>
 
-          <li class="nav-links"> 
-            <a href="goal1.html">Clean Energy</a>
-          </li>
+          <a href="goal2.html"
+            ><li class="nav-links">Consumption and Production</li></a
+          >
 
-          <li class="nav-links">
-            <a href="goal2.html">Consumption and Production</a>
-          </li>
+          <a href="goal3.html"><li class="nav-links">Climate Action</li></a>
 
-          <li class="nav-links">
-            <a href="goal3.html">Climate Action</a>
-          </li>
-        
-          </li>
-          <li class="nav-links">
-            <a href="signup.html">Sign&nbsp;up</a>
-          </li>
-          <li class="nav-links">
-            <a href="about.html">About</a>
-          </li>
+          <a href="signup.html"><li class="nav-links">Sign&nbsp;up</li></a>
+
+          <a href="about.html"><li class="nav-links">About</li></a>
         </ul>
         <a id="hamburger"> <i class="fa-solid fa-bars"></i> </a>
       </nav>
@@ -57,31 +46,38 @@
           </div>
           <h1 class="h1-signup">Subscribe Now</h1>
           <p class="p-signup">Never miss an update</p>
-          
-          <form name = "signupForm" class = "form-signup" onsubmit="return validateFields()" method="post">
+
+          <form
+            name="signupForm"
+            class="form-signup"
+            onsubmit="return validateFields()"
+            method="post"
+          >
             <div class="text-signup">
-              
               <div class="name-signup">
                 <input
                   type="text"
                   id="fname"
                   name="Fname"
-                  placeholder="First Name"/>
+                  placeholder="First Name"
+                />
                 <input
                   type="text"
                   id="lname"
                   name="Lname"
-                  placeholder="Last Name"/>
+                  placeholder="Last Name"
+                />
               </div>
-              
+
               <div class="mail-signup">
                 <input
                   type="email"
                   id="email"
                   name="Email"
-                  placeholder="E-mail"/>
+                  placeholder="E-mail"
+                />
               </div>
-              
+
               <div class="comment-signup">
                 <textarea
                   id="message"
@@ -97,7 +93,6 @@
               We won't send you any spam, you can unsubscribe at any time
             </p>
           </form>
-        
         </div>
       </div>
     </main>
