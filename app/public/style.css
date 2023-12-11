@@ -595,6 +595,14 @@ textarea {
   .goal-text {
     font-size: 14px;
   }
+
+  .nav-links {
+    font-size: 20px;
+    width: 200px;
+  }
+  .nav-bar {
+    right: -15px;
+  }
 }
 
 @media screen and (min-width: 1921) {
