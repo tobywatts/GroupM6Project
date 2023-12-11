@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if(name = "goal1"){
         const title = document.createElement("h2");
         title.textContent = data.goal1.Main.header;
+
+        const goalimage = document.createElement();
       }
     });
 });
