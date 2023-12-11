@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const title = document.createElement("h2");
         title.textContent = data.goal1.Main.header;
 
-        const goalimage = document.createElement();
+        const goalimage = document.createElement("img");
       }
     });
 });
