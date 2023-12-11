@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         title.textContent = data.goal1.Main.header;
 
         const goalimage = document.createElement("img");
-        goalimage.src = data.goal1.Main.
+        goalimage.src = data.goal1.Main.goal1Image.src;
       }
     });
 });
