@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         goalimage.className = data.goal1.Main.goal1Image.class;
 
         const goaltext = document.createElement("p");
-        goaltext.textContent = data.goal1.Main.goal1text;
+        goaltext.textContent = data.goal1.Main.goal1text.text;
         goaltext.className = data.goal1.Main.goal1text.class;
       }
 
