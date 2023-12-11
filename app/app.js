@@ -47,7 +47,7 @@ async function sendEmail() {
     secure: false,
     auth: {
       user: "dun23rcu.test@outlook.com",
-      pass: "23TestUEA",
+      pass: "Test123Test",
     },
   });
 
