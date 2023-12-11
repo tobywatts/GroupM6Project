@@ -149,7 +149,7 @@
             "class": "profile-picture"
           },
           "name": "Jules Tournier",
-          "bio": "Hi, I'm Jules. I have coded all of the Signup form."
+          "bio": "Hi, I'm Jules. I have coded all of the Signup form, I also made it so that the user will receive a confirmation email once they have signed up to the newsletter using packages like nodemailer."
         },
         "person3": {
           "img": {
@@ -158,7 +158,7 @@
             "class": "profile-picture"
           },
           "name": "Tom Walker",
-          "bio": "Hi, I'm Tom. I have coded all of the goals pages."
+          "bio": "Hi, I'm Tom. I have coded all of the goals pages. I have written the code and content of each goals page to allow the user to learn more about each of our selected goals."
         }
       }
     }
