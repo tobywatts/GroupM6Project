@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const goal1Button = document.createElement("button");
       goal1Button.className = "goal-button";
       const button1Link = document.createElement("a");
-      button1Link.className = "button-text";
+      button1Link.className = "button-link";
       button1Link.href = data.homePage.Main.pageContent.goal1.goal1Button.href;
-      button1Link.textContent =
+      goal1Button.textContent =
         data.homePage.Main.pageContent.goal1.goal1Button.text;
 
       const goal2 = document.createElement("section");
@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const goal2Button = document.createElement("button");
       goal2Button.className = "goal-button";
       const button2Link = document.createElement("a");
-      button2Link.className = "button-text";
+      button2Link.className = "button-link";
       button2Link.href = data.homePage.Main.pageContent.goal2.goal2Button.href;
-      button2Link.textContent =
+      goal2Button.textContent =
         data.homePage.Main.pageContent.goal2.goal2Button.text;
 
       const goal3 = document.createElement("section");
@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const goal3Button = document.createElement("button");
       goal3Button.className = "goal-button";
       const button3Link = document.createElement("a");
-      button3Link.className = "button-text";
+      button3Link.className = "button-link";
       button3Link.href = data.homePage.Main.pageContent.goal3.goal3Button.href;
-      button3Link.textContent =
+      goal3Button.textContent =
         data.homePage.Main.pageContent.goal3.goal3Button.text;
 
       goal1HeadingDiv.appendChild(goal1Heading);
@@ -97,14 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
       goal2.appendChild(goal2div);
       goal3.appendChild(goal3div);
 
-      goal1Button.appendChild(button1Link);
-      goal1.appendChild(goal1Button);
+      goal1.appendChild(button1Link);
+      button1Link.appendChild(goal1Button);
 
-      goal2Button.appendChild(button2Link);
-      goal2.appendChild(goal2Button);
+      goal2.appendChild(button2Link);
+      button2Link.appendChild(goal2Button);
 
-      goal3Button.appendChild(button3Link);
-      goal3.appendChild(goal3Button);
+      goal3.appendChild(button3Link);
+      button3Link.appendChild(goal3Button);
 
       document.body.appendChild(pageContent);
       document.getElementById("home-page").appendChild(title);

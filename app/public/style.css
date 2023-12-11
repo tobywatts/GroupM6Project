@@ -150,7 +150,7 @@ h1 {
   padding: 10px;
 }
 
-.goal-button {
+.button-link {
   width: 50%;
   padding: 10px;
   margin: 20px 10px 10px;
@@ -158,30 +158,14 @@ h1 {
   background-color: #d6d3d1;
   border: solid rgb(190, 190, 190) 2px;
   float: inline-end;
+  cursor: pointer;
 }
 
-/* .goal-image {
-  width: calc(100% + 40px);
-  height: 85px;
-  position: relative;
-  left: -20px;
-  display: flex;
-  border-radius: 0 0 10px 10px;
-  border-top: solid rgb(190, 190, 190) 2px;
-  border-bottom: solid rgb(190, 190, 190) 2px;
+.goal-button {
+  background-color: inherit;
+  border: none;
+  cursor: inherit;
 }
-
-#goal1 .goal-image {
-  bottom: -37.5%;
-}
-
-#goal2 .goal-image {
-  bottom: -27%;
-}
-
-#goal3 .goal-image {
-  bottom: -18%;
-} */
 
 #hamburger-buttons {
   display: none;
