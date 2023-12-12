@@ -1,30 +1,14 @@
 {
   "first": [
-    "Test",
-    "Jules",
-    "Tear",
-    "Toby",
-    "Toby"
+    "Test"
   ],
   "last": [
-    "Test",
-    "Tournier",
-    "Tournier",
-    "Watts",
-    "Watts"
+    "Test"
   ],
   "email": [
-    "abc@123.com",
-    "abc@123.com",
-    "jules@tournier.us",
-    "tobywatts04@gmail.com",
-    "tobywatts04@gmail.com"
+    "abc@123.com"
   ],
   "message": [
-    "Hello World!",
-    "Test",
-    "Fire",
-    "fsfsdf",
-    "fsfsdf"
+    "Hello World!"
   ]
 }
